@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <title>Contact US</title>
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="css/contactus.css" rel='stylesheet' type='text/css' />
+    <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+
+</head>
+<style>
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px 110px;
+        text-decoration: none;
+    }
+    
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 15px 116px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+    
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 15px 126px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <a class="active" href="NOtep.html">Home</a>
+        <a href="services.html">Services</a>
+        <div class="dropdown">
+            <button class="dropbtn">MY Account
+             <i class="fa fa-caret-down"></i>
+         </button>
+            <div class="dropdown-content">
+                <a href="signin.html">Log-in</a>
+                <a href="signup.html">Register</a>
+            </div>
+        </div>
+        <a href="Schedule.html">Schedule</a>
+        <a href="contact.html">COntact-us</a>
+        <a href="About.html">About us</a>
+    </div>
+    </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="login-w3l">
+        <div class="top-img-agileits-w3layouts">
+            <h2 class="sub-head-w3-agileits">Contact Us</h2>
+            <p>Fillout the form below to reach to us.</p>
+        </div>
+        <div class="login-form">
+            <form action="#" method="post">
+                <input type="text" name="Name" placeholder="Name" required="" />
+                <input type="email" name="Email" placeholder="Email" required="" />
+                <input type="text" name="Company" placeholder="Company" required="" />
+                <textarea name="Comments" placeholder="How can we help you?" required=""></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+
+    </div>
+    <div class="clear"></div>
+    <div class="footer-agileits">
+        <p>© 2020 RIDEGOoo</p>
+    </div>
+    <script>
+        var config = {
+            apiKey: "AIzaSyBPBEGVmH_1tyxmpqdk5SvUsMYPNltlzHQ",
+            authDomain: "ridegoo.firebaseapp.com",
+            databaseURL: "https://ridegoo.firebaseio.com/",
+            storageBucket: "ridegoo.appspot.com"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="/__/firebase/7.14.2/firebase-app.js"></script>
+
+    <script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
+
+    <script src="/__/firebase/init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+</body>
+
+</html>

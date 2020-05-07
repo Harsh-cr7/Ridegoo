@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <title> Signup</title>
+    <script src="https://www.gstatic.com/firebase/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebase/7.14.2/firebase-firestore.js"></script>
+    <script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
+
+    <script src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+</head>
+<style>
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px 110px;
+        text-decoration: none;
+    }
+    
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 15px 116px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+    
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 15px 126px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <a class="active" href="NOtep.html">Home</a>
+        <a href="services.html">Services</a>
+        <div class="dropdown">
+            <button class="dropbtn">MY Account
+                 <i class="fa fa-caret-down"></i>
+             </button>
+            <div class="dropdown-content">
+                <a href="signin.html">Log-in</a>
+                <a href="signup.html">Register</a>
+            </div>
+        </div>
+        <a href="Schedule.html">Schedule</a>
+        <a href="contact.html">COntact-us</a>
+        <a href="About.html">About us</a>
+    </div>
+    </div>
+    </div>
+    s
+    <div id="login-box">
+        <div class="left-box">
+            <h1> Sign Up</h1>
+
+            <input type="text" id="usr" name="username" placeholder="Username" />
+            <input type="text" id="eml" name="email" placeholder="Email" />
+            <input type="text" id="conno" name="Contact-no" placeholder="Contact-no." />
+            <input type="password" id="pass" name="password" placeholder="Password" />
+            <input type="password" name="password2" placeholder="Retype password" />
+            <input type="submit" id="smb" onclick="sclick()" name="signup-button" value="Sign Up" />
+        </div>
+        <div class="right-box">
+            <span class="signinwith">Sign in with<br/>Social Network     </span>
+
+            <button class="social facebook">Log in with Facebook</button>
+            <button class="social twitter">Log in with Twitter</button>
+            <button class="social google">Log in with Google+</button>
+
+
+        </div>
+        <div class="or">OR</div>
+
+    </div>
+    <ul id="desg"></ul>
+    <script>
+        var config = {
+            apiKey: "AIzaSyBPBEGVmH_1tyxmpqdk5SvUsMYPNltlzHQ",
+            authDomain: "ridegoo.firebaseapp.com",
+            databaseURL: "https://ridegoo.firebaseio.com/",
+            storageBucket: "ridegoo.appspot.com",
+            messagingSenderId: "806970915549"
+        };
+        firebase.initializeApp(config);
+        const db = firebase.firestore();
+        db.settings({
+            timestampsInSnapshots: true
+        });
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+</body>
+
+</html>
